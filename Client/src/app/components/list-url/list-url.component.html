@@ -1,0 +1,6 @@
+<div *ngFor="let record of records">
+  <app-single-url
+    [record]="record"
+    (deleteSingleUrl)="onDelete($event)"
+  ></app-single-url>
+</div>
