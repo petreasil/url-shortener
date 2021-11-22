@@ -37,6 +37,7 @@ export class UrlendpointService {
   getOne(id: string | undefined): Observable<any> {
     return this.http.get(`http://localhost:5000/${id}`);
   }
+
   postData(url: UrlModel): Observable<any> {
     let httpHeaders = new HttpHeaders({
       'Content-Type': 'application/json',

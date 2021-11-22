@@ -10,7 +10,6 @@ import { UrlendpointService } from './services/urlendpoint.service';
 export class AppComponent {
   constructor(private urlService: UrlendpointService) {}
   title = 'urlShort';
-
   onAdd(record: UrlModel): void {
     this.urlService.postData(record).subscribe((res) => {
       this.urlService.addOneRecord(res);
