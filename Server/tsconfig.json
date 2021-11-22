@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module":"commonjs",
+        "target":"ES6",
+        "outDir":"./dist",
+        "baseUrl":"./Server",
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true
+    },
+    "include":[
+        "../Server/**/*.ts"
+    ],
+    "exclude":[
+        "node_modules"
+    ]
+}

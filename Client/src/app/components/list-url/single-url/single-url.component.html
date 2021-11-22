@@ -1,0 +1,14 @@
+<div class="alert myclass alert-success" role="alert">
+  The {{ record.longUrl | slice: 0:30 }} has this
+  <a href="#" class="alert-link">{{ record.shortUrl }}</a> short URL. Press
+  <button class="btn btn-sm btn-outline-danger" (click)="redirectToUrl()">
+    {{ record.urlCode }}
+  </button>
+  to redirect.
+  <span
+    class="text-danger position-absolute"
+    (click)="deleteId(record.urlCode)"
+  >
+    <i class="far fa-times-circle"></i>
+  </span>
+</div>
